@@ -1,7 +1,7 @@
 {
   "name": "vue-zxing-scanner",
   "version": "0.1.0-beta",
-  "description": "Zxing Wrapper for Vue",
+  "description": "ZXing Wrapper for Vue 2",
   "private": false,
   "main": "src/index.js",
   "scripts": {
