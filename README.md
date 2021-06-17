@@ -23,7 +23,7 @@ Vue.use(VueZxingScanner);
 In your template you can use this syntax:
 ```html
 <div style="witdh:300px">
-  <CameraScanner
+  <v-zxing
     @decode="onDecode"
     @loaded="onLoaded"
   />
