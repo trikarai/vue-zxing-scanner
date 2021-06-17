@@ -41,3 +41,6 @@ methods: {
 ### Scanning from Image
 
 TODO
+
+### Credit
+https://github.com/olefirenko/vue-barcode-reader
