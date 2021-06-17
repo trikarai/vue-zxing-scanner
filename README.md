@@ -1,8 +1,14 @@
 # vue-zxing-scanner
 
+## Install
+
+```js
+npm i https://github.com/trikarai/vue-zxing-scanner
+```
+
 ## Usage
 
-The Vue Barcode Reader works out of the box by just including it.
+The Vue Zxing Scanner works out of the box by just including it.
 
 ### Using Video Camera
 
@@ -10,7 +16,8 @@ Once a stream from the users camera is loaded, it's displayed and continuously s
 
 ```js
 import Vue from "vue";
-import CameraScanner from "vue-zxing-scanner"
+import VueZxingScanner from "vue-zxing-scanner";
+Vue.use(VueZxingScanner);
 ```
 
 In your template you can use this syntax:
@@ -23,14 +30,14 @@ In your template you can use this syntax:
 </div>
 ```
 
-```html
+```js
 methods: {
   onDecode (result) {
     console.log(result)
   }
-}```
+}
+```
 
 ### Scanning from Image
 
 TODO
-
