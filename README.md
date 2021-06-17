@@ -3,7 +3,7 @@
 ## Install
 
 ```js
-npm i https://github.com/trikarai/vue-zxing-scanner
+npm i vue-zxing-scanner
 ```
 
 ## Usage
