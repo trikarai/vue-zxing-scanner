@@ -1,6 +1,6 @@
 {
   "name": "vue-zxing-scanner",
-  "version": "0.1.2-beta",
+  "version": "0.1.3-beta",
   "description": "ZXing Wrapper for Vue 2",
   "private": false,
   "main": "src/index.js",
@@ -15,11 +15,20 @@
     "type": "git",
     "url": "git+https://trikarai@github.com/trikarai/vue-zxing-scanner.git"
   },
+  "bugs": {
+    "url": "https://github.com/trikarai/vue-zxing-scanner/issues"
+  },
   "keywords": [
     "vue",
+    "vue-zxing",
     "zxing",
+    "zxingjs",
+    "zxing/library",
     "qrcode",
-    "barcode"
+    "barcode",
+    "barcode reader",
+    "qrcode reader",
+    "qr reader"
   ],
   "author": {
     "name": "Tri Sutrisno",
