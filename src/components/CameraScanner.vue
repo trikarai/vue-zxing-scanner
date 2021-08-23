@@ -2,14 +2,14 @@
   <div class="scanner-container">
     <div v-show="!isLoading">
       <div class="button-container">
-        <button class="button" id="startButton" @click="onStart">Start</button>
-        <button class="button" id="resetButton" @click="onReset">Reset</button>
+        <button class="button" id="startButton" @click="onStart" v-if="showStart">Start</button>
+        <button class="button" id="resetButton" @click="onReset" v-if="showReset">Reset</button>
       </div>
       <video poster="data:image/gif, AAAA" id="video" ref="scanner" />
-      <div class="overlay"></div>
+      <div class="overlay-element"></div>
       <div class="laser"></div>
 
-      <div class="select" id="sourceSelectPanel" style="display: none">
+      <div class="select" id="sourceSelectPanel" style="display: none" v-if="showChange">
         <label for="sourceSelect">Change video source:</label>
         <select
           id="sourceSelect"
@@ -34,6 +34,7 @@ import { BrowserMultiFormatReader, Exception } from '@zxing/library'
 
 export default {
   name: 'stream-reader',
+  props: { showReset: false, showChange: false, showStart: false },
   data () {
     return {
       isLoading: false,
